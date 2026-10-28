@@ -55,11 +55,13 @@
       <a href="/" class="site-logo">Body<span>Shape</span>Calculator</a>
       {%- set _slug = page.url | replace("/", "") -%}
       {%- set _c = crumbs.pages[_slug] -%}
-      <nav class="site-nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-i" aria-hidden="true"></span>Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="/" class="nav-top{% if page.url == "/" %} active{% endif %}">Body Type Calculator</a>
         {%- for k, h in crumbs.hubs %}
         <div class="nav-item">
           <a href="{{ h.url }}" class="nav-top{% if (_c and _c.hub == k) or page.url == h.url %} active{% endif %}">{{ h.short }}</a>
+          <button type="button" class="nav-sub" aria-expanded="false" aria-label="Show {{ h.name }} pages">+</button>
           <div class="nav-drop">
             <a href="{{ h.url }}" class="nav-all">All {{ h.name }}</a>
             {%- for s, p in crumbs.pages %}{% if p.hub == k %}
@@ -71,6 +73,14 @@
       </nav>
     </div>
   </header>
+  <script>
+  (function(){
+    var hd=document.querySelector('.site-header'),bt=hd&&hd.querySelector('.nav-toggle');if(!bt)return;
+    bt.addEventListener('click',function(){var o=hd.classList.toggle('nav-open');bt.setAttribute('aria-expanded',o)});
+    [].forEach.call(hd.querySelectorAll('.nav-sub'),function(b){b.addEventListener('click',function(){var it=b.parentNode,o=it.classList.toggle('open');b.setAttribute('aria-expanded',o)})});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&hd.classList.contains('nav-open')){hd.classList.remove('nav-open');bt.setAttribute('aria-expanded','false');bt.focus()}});
+  })();
+  </script>
 
   {%- if _c %}
   <nav class="site-crumbs" aria-label="Breadcrumb"><ol>
