@@ -1,0 +1,386 @@
+---
+layout: base.njk
+title: "Shoulder-to-Waist Ratio Calculator (Golden Ratio + 3D)"
+description: "Calculate your shoulder-to-waist ratio (Adonis index) and chest-to-waist ratio, see how you rank, and how close you are to the 1.618 golden ratio."
+ogImage: /assets/images/shoulder-to-waist-ratio-og.png
+ogImageAlt: "Shoulder-to-waist ratio calculator: average 1.26 and golden ratio 1.618 in 3D"
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#webpage",
+      "url": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/",
+      "name": "Shoulder-to-Waist Ratio Calculator (Golden Ratio + 3D)",
+      "headline": "Shoulder-to-Waist Ratio Calculator: Adonis Index, Golden Ratio and Chest-to-Waist",
+      "description": "Calculate your shoulder-to-waist ratio (Adonis index) and chest-to-waist ratio, see how you rank, and how close you are to the 1.618 golden ratio.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://bodyshapecalculator.net/#website"
+      },
+      "publisher": {
+        "@id": "https://bodyshapecalculator.net/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#breadcrumb"
+      },
+      "datePublished": "2026-10-28",
+      "dateModified": "2026-10-28",
+      "primaryImageOfPage": {
+        "@id": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#img1"
+      },
+      "image": [
+        {
+          "@id": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#img1"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#app"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Shoulder-to-waist ratio"
+        },
+        {
+          "@type": "Thing",
+          "name": "Adonis index"
+        },
+        {
+          "@type": "Thing",
+          "name": "Golden ratio"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bodyshapecalculator.net/#website",
+      "url": "https://bodyshapecalculator.net/",
+      "name": "Body Shape Calculator",
+      "publisher": {
+        "@id": "https://bodyshapecalculator.net/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bodyshapecalculator.net/#organization",
+      "name": "Body Shape Calculator",
+      "url": "https://bodyshapecalculator.net/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bodyshapecalculator.net/assets/images/body_shape_calculator_faveicon.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bodyshapecalculator.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Body Proportions Calculator",
+          "item": "https://bodyshapecalculator.net/body-proportions-calculator/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Shoulder-to-Waist Ratio Calculator",
+          "item": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#app",
+      "name": "Shoulder-to-Waist Ratio Calculator",
+      "url": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Shoulder-to-waist ratio (Adonis index)",
+        "Percentile vs U.S. Army men",
+        "Chest-to-waist ratio",
+        "Waist and shoulder targets for the 1.618 golden ratio",
+        "3D comparison with the golden ratio"
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#img1",
+      "contentUrl": "https://bodyshapecalculator.net/assets/images/shoulder-to-waist-ratio-chart-3d.webp",
+      "url": "https://bodyshapecalculator.net/assets/images/shoulder-to-waist-ratio-chart-3d.webp",
+      "width": 1600,
+      "height": 980,
+      "name": "Shoulder-to-waist ratio chart in 3D",
+      "caption": "Same shoulders with ratios from 1.10 to 1.618.",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#howto",
+      "name": "How to measure shoulder-to-waist ratio",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Measure your shoulders",
+          "text": "Stand relaxed with arms at your sides. Have someone wrap a tape around the widest part of your shoulders and upper arms, over the deltoids, keeping it level.",
+          "url": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#how-to-measure"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Measure your waist",
+          "text": "Wrap the tape around your waist at the navel, level with the floor, after a normal breath out. Do not suck in.",
+          "url": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#how-to-measure"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Divide",
+          "text": "Divide the shoulder measurement by the waist measurement, using the same unit for both.",
+          "url": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#how-to-measure"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Add your chest (optional)",
+          "text": "Measure around the fullest part of the chest under the arms to get chest-to-waist ratio as well.",
+          "url": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#how-to-measure"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bodyshapecalculator.net/shoulder-to-waist-ratio-calculator/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a good shoulder-to-waist ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For men, the average shoulder-to-waist ratio is about 1.26 (shoulder circumference divided by waist at the navel). A ratio above about 1.35 looks athletic, above 1.45 is a strong V-taper, and 1.618, the golden ratio, is the classic aesthetic ideal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the golden ratio for shoulders to waist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The golden ratio is 1.618. Applied to the body, it means a shoulder circumference 1.618 times the waist. With a 32 inch waist, that is about 51.8 inch shoulders. The idea is popularly called the Adonis index."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I calculate my shoulder-to-waist ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Measure around your shoulders at the widest point and around your waist at the navel, in the same unit. Divide the shoulder number by the waist number. For example, 48 ÷ 36 = 1.33."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the average shoulder-to-waist ratio for men?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the U.S. Army ANSUR II survey, the median man had a shoulder-to-waist ratio of about 1.26, with the middle half between 1.18 and 1.34. Only about 5% exceeded 1.46. Civilian men, who have larger waists on average, typically score lower."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good chest-to-waist ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For men, a chest at least 1.2 to 1.3 times the waist gives a visible V shape, and around 1.4 looks muscular. For women, bust and waist are better compared with the hips, which is what body shape calculators do."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is shoulder-to-waist ratio the same as the Adonis index?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Adonis index is a popular name for the shoulder-to-waist ratio, usually with the golden ratio of 1.618 as the target. It is a measure of looks, not of health."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I improve my shoulder-to-waist ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reduce the waist by losing body fat, and build the shoulders and upper back with overhead presses, lateral raises, pull-ups and rows. Losing 2 inches of waist changes the ratio about as much as adding 2.5 inches of shoulder circumference."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does shoulder-to-waist ratio matter for women?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It matters less. For women, the relationship between bust, waist and hips describes shape better. A shoulder-to-waist ratio well above the average often goes with an inverted triangle or hourglass shape."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/css/tools.css">
+<style></style>
+
+<div class="tp-wrap">
+  <div class="tp-container">
+    <header class="tp-header">
+      <p class="tp-eyebrow">Calculator &middot; Golden ratio &middot; 3D</p>
+      <h1 class="tp-h1">Shoulder-to-Waist Ratio Calculator<span class="tp-sr"> </span><small class="tp-h1-sub">Adonis Index, Golden Ratio and Chest-to-Waist Ratio</small></h1>
+      <p class="tp-subtitle">Enter your shoulder and waist measurements to get your ratio, see where you rank, and see your build next to the golden ratio in 3D.</p>
+      <p class="tp-updated">Updated <time datetime="2026-10-28">October 28, 2026</time> &middot; Average from ANSUR II (U.S. Army men)</p>
+    </header>
+  </div>
+
+  <div class="tp-mstripwrap" aria-hidden="true"><span class="tp-mlabel">Your ratio</span> <span id="tp-mstrip">&mdash;</span></div>
+  <div class="tp-tool" id="tp-tool">
+    <form class="tp-panel" onsubmit="return false" aria-label="Shoulder-to-waist ratio calculator">
+      <div class="tp-seg-row">
+        <div class="tp-seg" role="group" aria-label="Sex"><button type="button" data-sex="m" aria-pressed="true">Male</button><button type="button" data-sex="f" aria-pressed="false">Female</button></div>
+        <div class="tp-seg" role="group" aria-label="Units"><button type="button" data-unit="us" aria-pressed="true">in</button><button type="button" data-unit="metric" aria-pressed="false">cm</button></div>
+      </div>
+      <div class="tp-grid">
+        <label class="tp-field tp-full"><span>Shoulder circumference <small>(around the widest point)</small></span><span class="tp-inp tp-inp-big"><input id="tp-sh" type="number" inputmode="decimal" min="20" max="170" step="0.1"><i class="tp-lu">in</i></span></label>
+        <label class="tp-field tp-full"><span>Waist <small>(at the navel, relaxed)</small></span><span class="tp-inp tp-inp-big"><input id="tp-wa" type="number" inputmode="decimal" min="15" max="170" step="0.1"><i class="tp-lu">in</i></span></label>
+        <label class="tp-field tp-full"><span>Chest <small>(optional, for chest-to-waist)</small></span><span class="tp-inp"><input id="tp-ch" type="number" inputmode="decimal" min="20" max="170" step="0.1"><i class="tp-lu">in</i></span></label>
+        <div class="tp-field tp-full" id="tp-h-us"><span>Height <small>(optional, for 3D)</small></span><span class="tp-inp-pair"><span class="tp-inp"><input id="tp-ft" type="number" inputmode="numeric" min="4" max="7" aria-label="Height, feet"><i>ft</i></span><span class="tp-inp"><input id="tp-in" type="number" inputmode="decimal" min="0" max="11.9" aria-label="Height, inches"><i>in</i></span></span></div>
+        <label class="tp-field tp-full" id="tp-h-m" hidden><span>Height <small>(optional, for 3D)</small></span><span class="tp-inp"><input id="tp-cm" type="number" inputmode="decimal" min="120" max="230"><i>cm</i></span></label>
+      </div>
+      <p class="tp-err" id="tp-err" role="alert" hidden></p>
+      <p class="tp-hint">Example values are filled in. <a href="#how-to-measure">How to measure &darr;</a></p>
+      <p class="tp-privacy">Runs in your browser. Nothing you enter is sent or stored.</p>
+    </form>
+    <section class="tp-out" id="tp-out" aria-live="polite" aria-label="Your result">
+      <div class="tp-result">
+        <div class="tp-big"><span class="tp-big-l">Shoulder-to-waist ratio</span><b id="tp-ratio">&mdash;</b><span id="tp-cat" class="tp-pill">&mdash;</span></div>
+        <div class="tp-meta"><div><span>Percentile (men)</span><b id="tp-pct">&mdash;</b></div><div><span>Chest-to-waist</span><b id="tp-cw">&mdash;</b></div></div>
+      </div>
+      <div class="tp-scalewrap">
+        <div class="tp-scale"><div class="tp-bands"><i class="tp-c1" style="width:31%"></i><i class="tp-c3" style="width:17.8%"></i><i class="tp-c4" style="width:13.3%"></i><i class="tp-c2" style="width:37.9%"></i></div><span class="tp-marker" id="tp-marker"></span></div>
+        <div class="tp-ticks"><span style="left:0%">0.9</span><span style="left:31%">1.18</span><span style="left:48.9%">1.34</span><span style="left:79.8%">1.618</span><span class="tp-end" style="left:100%">1.8</span></div>
+      </div>
+      <div class="tp-cards">
+        <div class="tp-card"><span>Waist for 1.618</span><b id="tp-gw">&mdash;</b><small>at your shoulders</small></div>
+        <div class="tp-card"><span>Shoulders for 1.618</span><b id="tp-gs">&mdash;</b><small>at your waist</small></div>
+      </div>
+      <p class="tp-line" id="tp-line"></p>
+      <div class="tp-preview">
+        <h2 class="tp-prev-title">You vs. the golden ratio, in 3D</h2>
+        <div class="tp-canvaswrap"><canvas id="tp-canvas" role="img" aria-label="3D front view of your proportions next to the same shoulders at a 1.618 ratio"></canvas>
+          <div class="tp-caps"><span id="tp-cap-a" class="tp-cap-b">You</span><span id="tp-cap-b" style="color:var(--gl)">Golden ratio</span></div></div>
+        <p class="tp-tnote" id="tp-note"></p>
+      </div>
+    </section>
+  </div>
+
+  <article class="tp-article">
+
+  <div class="tp-answer" id="quick-answer"><p><strong>Quick answer:</strong> divide your shoulder circumference by your waist. The average man scores about <strong>1.26</strong>; above <strong>1.35</strong> looks athletic, and <strong>1.618</strong> (the golden ratio, or Adonis index) is the classic ideal.</p></div>
+
+  <nav class="pg-toc pg-toc--split" id="page-contents" aria-label="Inside this shoulder-to-waist ratio guide">
+    <details open>
+      <summary><span class="pg-toc-title">Inside this shoulder-to-waist ratio guide</span></summary>
+      <ol>
+        <li><a href="#what">What is shoulder-to-waist ratio?</a></li>
+        <li><a href="#chart">Ratio chart</a></li>
+        <li><a href="#golden">Golden ratio targets</a></li>
+        <li><a href="#chest">Chest-to-waist ratio</a></li>
+        <li><a href="#how-to-measure">How to measure</a></li>
+        <li><a href="#women">For women</a></li>
+        <li><a href="#improve">How to improve it</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </details>
+  </nav>
+
+  <section id="what" aria-labelledby="what-h">
+    <h2 id="what-h">What Is the Shoulder-to-Waist Ratio?</h2>
+    <p>The shoulder-to-waist ratio compares the circumference of your shoulders with the circumference of your waist. A higher number means broader shoulders over a narrower waist: the V-shaped upper body that many men train for. It is often called the <strong>Adonis index</strong>, with the golden ratio of <strong>1.618</strong> as the ideal.</p>
+    <figure class="tp-fig"><img src="/assets/images/shoulder-to-waist-ratio-chart-3d.webp" width="1600" height="980" loading="lazy" decoding="async" alt="Shoulder-to-waist ratio chart: the same shoulders with ratios of 1.10, 1.26, 1.40 and 1.618"><figcaption>Same shoulders, four waists: ratios from 1.10 to the golden ratio of 1.618.</figcaption></figure>
+    <p>The ratio is about appearance, not health. A good ratio and a healthy waist often go together, though: shrinking the waist improves both. For a health check, use the <a href="/waist-to-height-ratio-calculator/">waist-to-height ratio</a>.</p>
+  </section>
+
+  <section id="chart" aria-labelledby="chart-h">
+    <h2 id="chart-h">Shoulder-to-Waist Ratio Chart</h2>
+    <div class="tp-tablewrap"><table class="tp-table"><caption>Shoulder-to-waist ratio bands for men</caption><thead><tr><th scope="col">Ratio</th><th scope="col">Rating</th><th scope="col">What it means</th></tr></thead><tbody><tr><th scope="row">Below 1.18</th><td>Below average</td><td>Waist close to shoulder size; little visible taper.</td></tr><tr><th scope="row">1.18&ndash;1.34</th><td>Average</td><td>Middle half of U.S. Army men.</td></tr><tr><th scope="row">1.34&ndash;1.46</th><td>Athletic</td><td>Clear taper; top quarter of men.</td></tr><tr><th scope="row">1.46&ndash;1.6</th><td>Strong V-taper</td><td>Top 5% of men.</td></tr><tr><th scope="row">1.618+</th><td>Golden ratio</td><td>Classic aesthetic ideal; rare without training and low body fat.</td></tr></tbody></table></div>
+    <p>The average comes from the U.S. Army ANSUR&nbsp;II survey (median 1.26, middle half 1.18&ndash;1.34). Soldiers are leaner than average, so civilian men usually score lower: the average U.S. man has a 40.6&nbsp;inch waist (see <a href="/average-waist-size-men/">average waist size for men</a>).</p>
+  </section>
+
+  <section id="golden" aria-labelledby="golden-h">
+    <h2 id="golden-h">The Golden Ratio Body: Targets by Waist Size</h2>
+    <div class="tp-tablewrap"><table class="tp-table tp-num"><caption>Shoulders needed for a given ratio</caption><thead><tr><th scope="col">Ratio</th><th scope="col">Waist</th><th scope="col">Shoulders needed</th></tr></thead><tbody><tr><th scope="row">1.618</th><td>32 in</td><td>51.8 in</td></tr><tr><th scope="row">1.618</th><td>34 in</td><td>55.0 in</td></tr><tr><th scope="row">1.618</th><td>36 in</td><td>58.2 in</td></tr><tr><th scope="row">1.45</th><td>34 in</td><td>49.3 in</td></tr><tr><th scope="row">1.35</th><td>34 in</td><td>45.9 in</td></tr><tr><th scope="row">1.26</th><td>36 in</td><td>45.4 in</td></tr></tbody></table></div>
+    <p>Reaching 1.618 usually takes both broad shoulders and a lean waist. Because the waist is the smaller number, cutting it has a bigger effect: losing 2&nbsp;inches of waist raises the ratio about as much as adding 2.5&ndash;3&nbsp;inches of shoulder circumference.</p>
+  </section>
+
+  <section id="chest" aria-labelledby="chest-h">
+    <h2 id="chest-h">Chest-to-Waist Ratio</h2>
+    <p>The chest-to-waist ratio uses chest circumference instead of shoulders. It shows a similar V shape but reacts more to chest muscle and less to shoulder width. For men, about 1.1 shows a moderate taper, 1.25 a clear V shape and 1.4 a muscular build. Our <a href="/body-proportions-calculator/">body proportions calculator</a> works it out alongside waist-to-hip and leg-length ratios.</p>
+  </section>
+
+  <section id="how-to-measure" aria-labelledby="how-to-measure-h">
+    <h2 id="how-to-measure-h">How to Measure Shoulders and Waist</h2>
+    <ol class="tp-steps"><li><strong>Measure your shoulders.</strong> Stand relaxed with arms at your sides. Have someone wrap a tape around the widest part of your shoulders and upper arms, over the deltoids, keeping it level.</li><li><strong>Measure your waist.</strong> Wrap the tape around your waist at the navel, level with the floor, after a normal breath out. Do not suck in.</li><li><strong>Divide.</strong> Divide the shoulder measurement by the waist measurement, using the same unit for both.</li><li><strong>Add your chest (optional).</strong> Measure around the fullest part of the chest under the arms to get chest-to-waist ratio as well.</li></ol>
+    <p>Note that shoulder <em>circumference</em> is different from shoulder <em>width</em> measured straight across the back. For width, see <a href="/average-shoulder-width/">average shoulder width</a>.</p>
+  </section>
+
+  <section id="women" aria-labelledby="women-h">
+    <h2 id="women-h">Shoulder-to-Waist Ratio for Women</h2>
+    <p>Women&rsquo;s shoulders are narrower and their waists sit higher, so the same numbers mean different things. Large surveys do not publish this ratio for women, and bust, waist and hip measurements describe a woman&rsquo;s shape better. A high shoulder-to-waist ratio for a woman usually points to an <a href="/inverted-triangle-body-shape/">inverted triangle</a> or <a href="/hourglass-body-shape/">hourglass</a> shape; check yours with the <a href="/">body shape calculator</a>.</p>
+  </section>
+
+  <section id="improve" aria-labelledby="improve-h">
+    <h2 id="improve-h">How to Improve Your Shoulder-to-Waist Ratio</h2>
+    <p><strong>Lose waist fat:</strong> a modest calorie deficit with enough protein trims the waist while keeping muscle. See where you are on the <a href="/body-fat-percentage-chart/">body fat percentage chart</a>.</p>
+    <p><strong>Build the shoulders and back:</strong> overhead presses and lateral raises widen the deltoids; pull-ups and rows widen the upper back. Train them two or three times a week and add weight over time.</p>
+    <p><strong>Check the result:</strong> try different shoulder and waist sizes in the <a href="/body-visualizer/">3D body visualizer</a>, or see which build you have with the <a href="/male-body-type-calculator/">male body type calculator</a>.</p>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">Shoulder-to-Waist Ratio FAQ</h2>
+      <details class="tp-faq"><summary><h3>What is a good shoulder-to-waist ratio?</h3></summary><p>For men, the average shoulder-to-waist ratio is about 1.26 (shoulder circumference divided by waist at the navel). A ratio above about 1.35 looks athletic, above 1.45 is a strong V-taper, and 1.618, the golden ratio, is the classic aesthetic ideal.</p></details>
+      <details class="tp-faq"><summary><h3>What is the golden ratio for shoulders to waist?</h3></summary><p>The golden ratio is 1.618. Applied to the body, it means a shoulder circumference 1.618 times the waist. With a 32 inch waist, that is about 51.8 inch shoulders. The idea is popularly called the Adonis index.</p></details>
+      <details class="tp-faq"><summary><h3>How do I calculate my shoulder-to-waist ratio?</h3></summary><p>Measure around your shoulders at the widest point and around your waist at the navel, in the same unit. Divide the shoulder number by the waist number. For example, 48 ÷ 36 = 1.33.</p></details>
+      <details class="tp-faq"><summary><h3>What is the average shoulder-to-waist ratio for men?</h3></summary><p>In the U.S. Army ANSUR II survey, the median man had a shoulder-to-waist ratio of about 1.26, with the middle half between 1.18 and 1.34. Only about 5% exceeded 1.46. Civilian men, who have larger waists on average, typically score lower.</p></details>
+      <details class="tp-faq"><summary><h3>What is a good chest-to-waist ratio?</h3></summary><p>For men, a chest at least 1.2 to 1.3 times the waist gives a visible V shape, and around 1.4 looks muscular. For women, bust and waist are better compared with the hips, which is what body shape calculators do.</p></details>
+      <details class="tp-faq"><summary><h3>Is shoulder-to-waist ratio the same as the Adonis index?</h3></summary><p>Yes. The Adonis index is a popular name for the shoulder-to-waist ratio, usually with the golden ratio of 1.618 as the target. It is a measure of looks, not of health.</p></details>
+      <details class="tp-faq"><summary><h3>How can I improve my shoulder-to-waist ratio?</h3></summary><p>Reduce the waist by losing body fat, and build the shoulders and upper back with overhead presses, lateral raises, pull-ups and rows. Losing 2 inches of waist changes the ratio about as much as adding 2.5 inches of shoulder circumference.</p></details>
+      <details class="tp-faq"><summary><h3>Does shoulder-to-waist ratio matter for women?</h3></summary><p>It matters less. For women, the relationship between bust, waist and hips describes shape better. A shoulder-to-waist ratio well above the average often goes with an inverted triangle or hourglass shape.</p></details>
+  </section>
+
+  <section id="related" aria-labelledby="related-h">
+    <h2 id="related-h">Related Tools</h2>
+    <ul class="tp-related"><li><a href="/shoulder-to-hip-ratio-calculator/">Shoulder-to-Hip Ratio Calculator</a><span>Shoulders compared with hips.</span></li><li><a href="/average-shoulder-width/">Average Shoulder Width</a><span>Percentiles and how to measure.</span></li><li><a href="/body-proportions-calculator/">Body Proportions Calculator</a><span>Every key body ratio at once.</span></li><li><a href="/male-body-type-calculator/">Male Body Type Calculator</a><span>Trapezoid, inverted triangle and more.</span></li><li><a href="/average-waist-size-men/">Average Waist Size for Men</a><span>By age and height.</span></li><li><a href="/body-visualizer/">Body Visualizer</a><span>Try different proportions in 3D.</span></li></ul>
+  </section>
+
+  <section id="sources" aria-labelledby="sources-h">
+    <h2 id="sources-h">Sources</h2>
+    <ul class="tp-sources"><li>Gordon CC, et al. <em>2012 Anthropometric Survey of U.S. Army Personnel: Methods and Summary Statistics</em> (ANSUR II). NATICK/TR-15/007, 2014.</li><li>Fryar CD, et al. <em>Anthropometric Reference Data for Children and Adults: United States, August 2021&ndash;August 2023.</em> NCHS, 2025.</li><li>Sell A, Lukaszewski AW, Townsley M. Cues of upper body strength account for most of the variance in men&rsquo;s bodily attractiveness. <em>Proceedings of the Royal Society B</em>. 2017;284:20171819.</li></ul>
+    <p class="tp-note">The ratio describes appearance, not health. Percentiles for men assume a normal distribution fitted to ANSUR II figures.</p>
+  </section>
+
+  </article>
+</div>
+
+<script src="/assets/js/shoulder-to-waist-ratio-calculator.js" defer></script>
