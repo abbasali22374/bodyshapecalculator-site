@@ -1,0 +1,316 @@
+---
+layout: base.njk
+title: "Height Calculator: How Tall Will My Child Be? (Prediction)"
+description: "Predict how tall your child will be from the parents\u2019 heights and current growth percentile, with a likely range and a 3D view next to the parents."
+ogImage: /assets/images/height-calculator-og.png
+ogImageAlt: "Height calculator: mother, child, predicted adult height and father in 3D"
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://bodyshapecalculator.net/height-calculator/#webpage",
+      "url": "https://bodyshapecalculator.net/height-calculator/",
+      "name": "Height Calculator: How Tall Will My Child Be? (Prediction)",
+      "headline": "Height Calculator: Predict How Tall Your Child Will Be",
+      "description": "Predict how tall your child will be from the parents’ heights and current growth percentile, with a likely range and a 3D view next to the parents.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://bodyshapecalculator.net/#website"
+      },
+      "publisher": {
+        "@id": "https://bodyshapecalculator.net/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://bodyshapecalculator.net/height-calculator/#breadcrumb"
+      },
+      "datePublished": "2026-10-28",
+      "dateModified": "2026-10-28",
+      "mainEntity": {
+        "@id": "https://bodyshapecalculator.net/height-calculator/#app"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Height prediction"
+        },
+        {
+          "@type": "Thing",
+          "name": "Child growth"
+        },
+        {
+          "@type": "Thing",
+          "name": "Mid-parental height"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bodyshapecalculator.net/#website",
+      "url": "https://bodyshapecalculator.net/",
+      "name": "Body Shape Calculator",
+      "publisher": {
+        "@id": "https://bodyshapecalculator.net/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bodyshapecalculator.net/#organization",
+      "name": "Body Shape Calculator",
+      "url": "https://bodyshapecalculator.net/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bodyshapecalculator.net/assets/images/body_shape_calculator_faveicon.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bodyshapecalculator.net/height-calculator/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bodyshapecalculator.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Height Calculator",
+          "item": "https://bodyshapecalculator.net/height-calculator/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://bodyshapecalculator.net/height-calculator/#app",
+      "name": "Child Adult Height Calculator",
+      "url": "https://bodyshapecalculator.net/height-calculator/",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Mid-parental height (Tanner method)",
+        "Growth-percentile projection from NHANES data",
+        "Blended prediction with likely range",
+        "3D view next to the parents",
+        "Feet and inches or centimeters"
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://bodyshapecalculator.net/height-calculator/#howto",
+      "name": "How to predict a child’s adult height",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Measure the child",
+          "text": "Stand the child barefoot against a wall, heels together, and mark the top of the head with a flat object. Note the exact age.",
+          "url": "https://bodyshapecalculator.net/height-calculator/#how-to"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Enter the parents’ heights",
+          "text": "Use measured heights if possible; people often overestimate their own height by an inch or so.",
+          "url": "https://bodyshapecalculator.net/height-calculator/#how-to"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Read the prediction",
+          "text": "The calculator shows the mid-parental estimate, the growth-curve estimate and a blended prediction with a likely range.",
+          "url": "https://bodyshapecalculator.net/height-calculator/#how-to"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Track over time",
+          "text": "Repeat every 6 to 12 months. A steady curve is more informative than a single measurement.",
+          "url": "https://bodyshapecalculator.net/height-calculator/#how-to"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bodyshapecalculator.net/height-calculator/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How accurate are height predictions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The mid-parental method predicts adult height within about 8.5 cm (3.3 in) for roughly 95% of children. Combining it with the child’s current growth percentile, as this calculator does, narrows the range, especially for older children. Methods that use a hand X-ray of bone age, done by a doctor, are the most accurate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate a child’s adult height from the parents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add the mother’s and father’s heights. For a boy, add 13 cm (5 in) and divide by 2; for a girl, subtract 13 cm (5 in) and divide by 2. For example, parents of 5 ft 4 in and 5 ft 10 in give a boy about 5 ft 9.5 in and a girl about 5 ft 4.5 in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it true that a child’s height at 2 doubles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Roughly. A popular rule says boys reach about half their adult height by age 2 and girls by about 18 months, so doubling gives a rough estimate. It can easily be off by several inches."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When do children stop growing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Girls usually stop growing about 2 years after their first period, around age 15 to 16. Boys usually stop around 17 to 19. A few late developers keep growing slightly into their early 20s."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a child grow taller than predicted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Predictions describe likely outcomes, not limits. Nutrition, sleep, overall health and the timing of puberty all affect final height. Children who start puberty late often grow taller than their percentile suggested."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I talk to a doctor about my child’s height?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "See a pediatrician if your child is below the 3rd or above the 97th percentile, crosses two major percentile lines, grows less than about 4 to 5 cm (2 in) a year before puberty, or starts puberty very early or late."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/css/tools.css">
+<style></style>
+
+<div class="tp-wrap">
+  <div class="tp-container">
+    <header class="tp-header">
+      <p class="tp-eyebrow">Prediction &middot; Mid-parental + growth curve &middot; 3D</p>
+      <h1 class="tp-h1">Height Calculator<span class="tp-sr"> </span><small class="tp-h1-sub">How Tall Will My Child Be? Adult Height Prediction</small></h1>
+      <p class="tp-subtitle">Enter your child&rsquo;s age and height and both parents&rsquo; heights to predict adult height, with a likely range and a 3D view next to the parents.</p>
+      <p class="tp-updated">Updated <time datetime="2026-10-28">October 28, 2026</time> &middot; Growth data: CDC NHANES 2015&ndash;2018</p>
+    </header>
+  </div>
+
+  <div class="tp-mstripwrap" aria-hidden="true"><span class="tp-mlabel">Prediction</span> <span id="tp-mstrip">&mdash;</span></div>
+  <div class="tp-tool" id="tp-tool">
+    <form class="tp-panel" onsubmit="return false" aria-label="Child adult height calculator">
+      <div class="tp-seg-row">
+        <div class="tp-seg" role="group" aria-label="Child's sex"><button type="button" data-sex="m" aria-pressed="true">Boy</button><button type="button" data-sex="f" aria-pressed="false">Girl</button></div>
+        <div class="tp-seg" role="group" aria-label="Units"><button type="button" data-unit="us" aria-pressed="true">ft / in</button><button type="button" data-unit="metric" aria-pressed="false">cm</button></div>
+      </div>
+      <div class="tp-grid">
+        <label class="tp-field tp-full"><span>Child&rsquo;s age <small>(2&ndash;19, decimals OK)</small></span><span class="tp-inp"><input id="tp-age" type="number" inputmode="decimal" min="2" max="19" step="0.5"><i>yrs</i></span></label>
+        <div class="tp-field tp-full hk-us"><span>Child&rsquo;s current height</span><span class="tp-inp-pair"><span class="tp-inp"><input id="tp-k-ft" type="number" inputmode="numeric" min="2" max="7" aria-label="Child&rsquo;s current height, feet"><i>ft</i></span><span class="tp-inp"><input id="tp-k-in" type="number" inputmode="decimal" min="0" max="11.9" step="0.25" aria-label="Child&rsquo;s current height, inches"><i>in</i></span></span></div><label class="tp-field tp-full hk-m" hidden><span>Child&rsquo;s current height</span><span class="tp-inp"><input id="tp-k-cm" type="number" inputmode="decimal" min="60" max="230" step="0.1"><i>cm</i></span></label>
+        <div class="tp-field tp-full hk-us"><span>Mother&rsquo;s height</span><span class="tp-inp-pair"><span class="tp-inp"><input id="tp-m-ft" type="number" inputmode="numeric" min="2" max="7" aria-label="Mother&rsquo;s height, feet"><i>ft</i></span><span class="tp-inp"><input id="tp-m-in" type="number" inputmode="decimal" min="0" max="11.9" step="0.25" aria-label="Mother&rsquo;s height, inches"><i>in</i></span></span></div><label class="tp-field tp-full hk-m" hidden><span>Mother&rsquo;s height</span><span class="tp-inp"><input id="tp-m-cm" type="number" inputmode="decimal" min="60" max="230" step="0.1"><i>cm</i></span></label>
+        <div class="tp-field tp-full hk-us"><span>Father&rsquo;s height</span><span class="tp-inp-pair"><span class="tp-inp"><input id="tp-d-ft" type="number" inputmode="numeric" min="2" max="7" aria-label="Father&rsquo;s height, feet"><i>ft</i></span><span class="tp-inp"><input id="tp-d-in" type="number" inputmode="decimal" min="0" max="11.9" step="0.25" aria-label="Father&rsquo;s height, inches"><i>in</i></span></span></div><label class="tp-field tp-full hk-m" hidden><span>Father&rsquo;s height</span><span class="tp-inp"><input id="tp-d-cm" type="number" inputmode="decimal" min="60" max="230" step="0.1"><i>cm</i></span></label>
+      </div>
+      <p class="tp-err" id="tp-err" role="alert" hidden></p>
+      <p class="tp-hint">Leave the child&rsquo;s height or the parents&rsquo; heights blank to use one method only.</p>
+      <p class="tp-privacy">Runs in your browser. Nothing you enter is sent or stored.</p>
+    </form>
+    <section class="tp-out" id="tp-out" aria-live="polite" aria-label="Predicted adult height">
+      <div class="tp-result"><div class="tp-big"><span class="tp-big-l">Predicted adult height</span><b id="tp-res">&mdash;</b><span class="tp-pill tp-c3" id="tp-range">&mdash;</span></div>
+        <div class="tp-meta"><div><span>Mid-parental</span><b id="tp-mp">&mdash;</b></div><div><span>Growth curve</span><b id="tp-gp">&mdash;</b></div></div></div>
+      <p class="tp-line" id="tp-line"></p>
+      <div class="tp-preview"><h2 class="tp-prev-title">Your child as an adult, next to the parents</h2>
+        <div class="tp-canvaswrap"><canvas id="tp-canvas" role="img" aria-label="3D figures of the mother, the child now, the predicted adult height and the father"></canvas></div>
+        <p class="tp-tnote">All figures at true scale. Predictions are estimates; most children end up within the range shown.</p></div>
+    </section>
+    <script type="application/json" id="tp-data">{"m":{"2":[84.4,88.5,91.1,94.3,98.6],"3":[91.2,96.0,99.2,102.1,106.1],"4":[97.2,102.5,105.4,108.9,114.5],"5":[102.7,108.8,112.4,116.3,122.6],"6":[109.6,114.7,118.0,121.8,128.4],"7":[116.5,122.3,126.1,129.8,136.4],"8":[121.2,127.8,131.8,136.4,143.5],"9":[122.6,131.0,136.4,140.3,148.6],"10":[130.7,137.4,141.1,146.3,151.7],"11":[136.3,143.3,148.3,153.7,162.9],"12":[140.3,148.1,153.9,159.0,169.4],"13":[149.4,157.0,163.6,167.6,172.8],"14":[154.8,163.0,170.0,175.3,180.4],"15":[160.1,167.3,172.7,176.4,183.5],"16":[160.1,167.4,172.6,179.5,185.8],"17":[163.7,170.2,174.9,179.8,187.2],"18":[163.9,170.9,175.5,179.8,184.9],"19":[162.7,170.8,176.1,179.4,186.1],"20-29":[164.5,171.0,176.0,180.2,187.1],"30-39":[163.5,171.2,176.7,181.4,188.7],"40-49":[163.6,171.5,176.5,181.4,188.4],"50-59":[162.8,170.1,175.3,180.6,187.7],"60-69":[162.5,169.4,174.3,178.8,185.0],"70-79":[161.5,168.6,173.1,177.5,184.7],"80+":[157.4,166.0,170.3,175.3,182.3],"all":[162.8,170.1,175.1,179.8,186.7]},"f":{"2":[83.5,86.8,89.7,92.6,95.8],"3":[90.4,94.9,96.9,100.0,105.9],"4":[97.0,102.1,104.6,108.6,113.2],"5":[101.9,107.9,112.1,115.6,122.6],"6":[109.1,114.3,119.3,122.7,127.1],"7":[114.9,119.8,123.7,127.9,133.7],"8":[120.2,126.0,129.8,133.9,141.8],"9":[126.1,131.8,136.5,142.5,147.4],"10":[130.2,138.9,142.3,148.2,154.7],"11":[136.6,145.1,150.8,156.1,162.8],"12":[142.0,151.9,154.3,158.8,166.0],"13":[145.0,154.2,157.7,162.8,166.3],"14":[150.5,156.9,161.2,166.6,173.0],"15":[151.3,156.1,160.0,165.4,173.2],"16":[151.9,157.5,161.7,165.7,172.7],"17":[152.8,157.7,162.4,167.1,173.4],"18":[149.9,159.2,162.3,166.4,170.9],"19":[153.1,158.1,161.2,165.2,175.1],"20-29":[151.0,158.1,162.8,167.0,172.8],"30-39":[151.2,157.9,162.6,167.7,173.4],"40-49":[150.7,157.7,162.6,166.6,174.2],"50-59":[150.7,156.5,160.9,165.9,171.4],"60-69":[149.3,155.9,160.8,165.3,171.7],"70-79":[147.5,153.9,157.9,162.6,168.1],"80+":[145.3,151.5,155.8,159.7,166.7],"all":[149.8,156.4,161.3,166.0,172.5]}}</script>
+  </div>
+
+  <article class="tp-article">
+
+  <div class="tp-answer" id="quick-answer"><p><strong>Quick answer:</strong> for a boy, add both parents&rsquo; heights, add 5&nbsp;in (13&nbsp;cm) and divide by 2; for a girl, subtract 5&nbsp;in and divide by 2. About 95% of children end up within <strong>3.3&nbsp;in (8.5&nbsp;cm)</strong> of this. The calculator also uses the child&rsquo;s current growth percentile for a sharper estimate.</p></div>
+
+  <nav class="pg-toc pg-toc--cards" id="page-contents" aria-label="Inside this height calculator guide">
+    <details open>
+      <summary><span class="pg-toc-title">Inside this height calculator guide</span></summary>
+      <ol>
+        <li><a href="#methods">How it works</a></li>
+        <li><a href="#formula">Mid-parental height formula</a></li>
+        <li><a href="#growth">How children grow</a></li>
+        <li><a href="#factors">What affects final height</a></li>
+        <li><a href="#how-to">How to use the calculator</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </details>
+  </nav>
+
+  <section id="methods" aria-labelledby="methods-h">
+    <h2 id="methods-h">How the Height Calculator Works</h2>
+    <p>This calculator combines two well-established methods:</p>
+    <ul class="tp-steps" style="list-style:disc">
+      <li><strong>Mid-parental height (Tanner method):</strong> the parents&rsquo; average height, plus 6.5&nbsp;cm (2.5&nbsp;in) for a boy or minus 6.5&nbsp;cm for a girl. About 95% of children end up within 8.5&nbsp;cm of this target.</li>
+      <li><strong>Growth-curve projection:</strong> the child&rsquo;s current percentile for age (from U.S. NHANES growth data) carried forward to adult height. A child on the 60th percentile at age 8 is projected to reach the 60th percentile as an adult.</li>
+    </ul>
+    <p>When you enter both, the prediction blends them, leaning more on the growth curve as the child gets older, because an older child&rsquo;s height already reflects more of their own growth pattern.</p>
+  </section>
+
+  <section id="formula" aria-labelledby="formula-h">
+    <h2 id="formula-h">Mid-Parental Height Formula</h2>
+    <div class="tp-tablewrap"><table class="tp-table"><caption>Mid-parental height formula</caption><thead><tr><th scope="col">Child</th><th scope="col">Formula (cm)</th><th scope="col">Formula (inches)</th></tr></thead><tbody><tr><th scope="row">Boy</th><td>(mother + father + 13) &divide; 2</td><td>(mother + father + 5) &divide; 2</td></tr><tr><th scope="row">Girl</th><td>(mother + father &minus; 13) &divide; 2</td><td>(mother + father &minus; 5) &divide; 2</td></tr></tbody></table></div><div class="tp-tablewrap"><table class="tp-table tp-num"><caption>Example predictions</caption><thead><tr><th scope="col">Mother</th><th scope="col">Father</th><th scope="col">Boy</th><th scope="col">Girl</th></tr></thead><tbody><tr><th scope="row">5 ft 2 in</th><td>5 ft 8 in</td><td>5 ft 7.5 in</td><td>5 ft 2.5 in</td></tr><tr><th scope="row">5 ft 4 in</th><td>5 ft 10 in</td><td>5 ft 9.5 in</td><td>5 ft 4.5 in</td></tr><tr><th scope="row">5 ft 6 in</th><td>6 ft 0 in</td><td>5 ft 11.5 in</td><td>5 ft 6.5 in</td></tr><tr><th scope="row">5 ft 8 in</th><td>6 ft 2 in</td><td>6 ft 1.5 in</td><td>5 ft 8.5 in</td></tr></tbody></table></div>
+  </section>
+
+  <section id="growth" aria-labelledby="growth-h">
+    <h2 id="growth-h">How Children Grow</h2>
+    <p>Children grow fastest in the first year (about 25&nbsp;cm), then about 6&nbsp;cm a year through early childhood. Growth speeds up again in puberty: girls typically gain 20 to 25&nbsp;cm from about age 10 to 15, and boys 25 to 30&nbsp;cm from about 12 to 17. See the full height-for-age chart in the <a href="/height-percentile-calculator/">height percentile calculator</a>.</p>
+  </section>
+
+  <section id="factors" aria-labelledby="factors-h">
+    <h2 id="factors-h">What Affects Final Height</h2>
+    <p>Genetics explains roughly 80% of the variation in height between people. The rest comes from nutrition (especially protein and overall calories in childhood), sleep, chronic illness and the timing of puberty. Improving these can help a child reach their genetic potential, but no diet or supplement adds height beyond it. Population-wide, better childhood nutrition explains why many countries grew 10 to 20&nbsp;cm taller over the past century (see <a href="/average-height-by-country/">average height by country</a>).</p>
+  </section>
+
+  <section id="how-to" aria-labelledby="how-to-h">
+    <h2 id="how-to-h">How to Use the Calculator</h2>
+    <ol class="tp-steps"><li><strong>Measure the child.</strong> Stand the child barefoot against a wall, heels together, and mark the top of the head with a flat object. Note the exact age.</li><li><strong>Enter the parents’ heights.</strong> Use measured heights if possible; people often overestimate their own height by an inch or so.</li><li><strong>Read the prediction.</strong> The calculator shows the mid-parental estimate, the growth-curve estimate and a blended prediction with a likely range.</li><li><strong>Track over time.</strong> Repeat every 6 to 12 months. A steady curve is more informative than a single measurement.</li></ol><p>To compare the predicted height with friends or family, use the <a href="/height-comparison/">height comparison tool</a>.</p>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">Child Height Prediction FAQ</h2>
+      <details class="tp-faq"><summary><h3>How accurate are height predictions?</h3></summary><p>The mid-parental method predicts adult height within about 8.5 cm (3.3 in) for roughly 95% of children. Combining it with the child’s current growth percentile, as this calculator does, narrows the range, especially for older children. Methods that use a hand X-ray of bone age, done by a doctor, are the most accurate.</p></details>
+      <details class="tp-faq"><summary><h3>How do you calculate a child’s adult height from the parents?</h3></summary><p>Add the mother’s and father’s heights. For a boy, add 13 cm (5 in) and divide by 2; for a girl, subtract 13 cm (5 in) and divide by 2. For example, parents of 5 ft 4 in and 5 ft 10 in give a boy about 5 ft 9.5 in and a girl about 5 ft 4.5 in.</p></details>
+      <details class="tp-faq"><summary><h3>Is it true that a child’s height at 2 doubles?</h3></summary><p>Roughly. A popular rule says boys reach about half their adult height by age 2 and girls by about 18 months, so doubling gives a rough estimate. It can easily be off by several inches.</p></details>
+      <details class="tp-faq"><summary><h3>When do children stop growing?</h3></summary><p>Girls usually stop growing about 2 years after their first period, around age 15 to 16. Boys usually stop around 17 to 19. A few late developers keep growing slightly into their early 20s.</p></details>
+      <details class="tp-faq"><summary><h3>Can a child grow taller than predicted?</h3></summary><p>Yes. Predictions describe likely outcomes, not limits. Nutrition, sleep, overall health and the timing of puberty all affect final height. Children who start puberty late often grow taller than their percentile suggested.</p></details>
+      <details class="tp-faq"><summary><h3>When should I talk to a doctor about my child’s height?</h3></summary><p>See a pediatrician if your child is below the 3rd or above the 97th percentile, crosses two major percentile lines, grows less than about 4 to 5 cm (2 in) a year before puberty, or starts puberty very early or late.</p></details>
+  </section>
+
+  <section id="related" aria-labelledby="related-h">
+    <h2 id="related-h">Related Tools</h2>
+    <ul class="tp-related"><li><a href="/height-percentile-calculator/">Height Percentile Calculator</a><span>Percentile by age.</span></li><li><a href="/height-comparison/">Height Comparison</a><span>Compare heights in 3D.</span></li><li><a href="/average-height-by-country/">Average Height by Country</a><span>199 countries.</span></li><li><a href="/cm-to-feet-and-inches/">cm to Feet and Inches</a><span>Height converter.</span></li><li><a href="/feet-to-cm/">Feet to cm</a><span>Height converter.</span></li><li><a href="/how-to-write-height/">How to Write Height</a><span>Formats explained.</span></li></ul>
+  </section>
+
+  <section id="sources" aria-labelledby="sources-h">
+    <h2 id="sources-h">Sources</h2>
+    <ul class="tp-sources"><li>Tanner JM, Goldstein H, Whitehouse RH. Standards for children&rsquo;s height at ages 2&ndash;9 years allowing for height of parents. <em>Archives of Disease in Childhood</em>. 1970;45:755&ndash;762.</li><li>Fryar CD, et al. <em>Anthropometric Reference Data for Children and Adults: United States, 2015&ndash;2018.</em> NCHS, 2021.</li><li>Silventoinen K, et al. Heritability of adult body height: a comparative study of twin cohorts in eight countries. <em>Twin Research</em>. 2003;6(5):399&ndash;408.</li></ul>
+    <p class="tp-note">Predictions are estimates for healthy children. They are not a medical assessment; talk to a pediatrician about any concern with growth.</p>
+  </section>
+
+  </article>
+</div>
+
+<script src="/assets/js/height-calculator.js" defer></script>

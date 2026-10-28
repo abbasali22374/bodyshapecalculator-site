@@ -997,7 +997,7 @@
     html += '<article class="bv-metric"><h3>Waist-to-hip ratio</h3>' + rows(function (m) { return m.whr.toFixed(2); }, function (m, b) { return m.whrNote; }) + '<p class="bv-msub"><a href="/waist-to-hip-ratio-calculator/">Read the WHR guide \u2192</a></p></article>';
     html += '<article class="bv-metric"><h3>Waist-to-height ratio</h3>' + rows(function (m) { return m.whtr.toFixed(2); }, function (m) { return m.whtrNote; }) + '<p class="bv-msub"><a href="/waist-to-height-ratio-calculator/">Read the WHtR guide \u2192</a></p></article>';
     html += '<article class="bv-metric"><h3>Body fat (estimate)</h3>' + rows(function (m) { return '~' + num(m.bf, 0) + '%'; }, function (m) { return m.bfNote; }) +
-            '<p class="bv-msub">US Navy circumference method. Typically within a few percentage points; not a scan.</p></article>';
+            '<p class="bv-msub">US Navy circumference method. Typically within a few percentage points; not a scan. <a href="/body-fat-percentage-chart/">Body fat chart \u2192</a></p></article>';
     html += '<article class="bv-metric"><h3>Body shape</h3>' + ms.map(function (m, i) {
       return '<div class="bv-mrow">' + (two ? '<span class="bv-tag">' + (i ? 'B' : 'A') + '</span>' : '') +
              '<span class="bv-big bv-shape">' + esc(m.shape.name) + '</span></div>';

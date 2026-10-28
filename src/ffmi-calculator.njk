@@ -1,0 +1,380 @@
+---
+layout: base.njk
+title: "FFMI Calculator: Fat-Free Mass Index + Natural Limit"
+description: "Free FFMI calculator: get your fat-free mass index and normalized FFMI, see the FFMI chart for men and women, and the natural limit of 25."
+ogImage: /assets/images/ffmi-calculator-og.png
+ogImageAlt: "FFMI calculator with FFMI categories"
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://bodyshapecalculator.net/ffmi-calculator/#webpage",
+      "url": "https://bodyshapecalculator.net/ffmi-calculator/",
+      "name": "FFMI Calculator: Fat-Free Mass Index + Natural Limit",
+      "headline": "FFMI Calculator: Fat-Free Mass Index, Chart and Natural Limit",
+      "description": "Free FFMI calculator: get your fat-free mass index and normalized FFMI, see the FFMI chart for men and women, and the natural limit of 25.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://bodyshapecalculator.net/#website"
+      },
+      "publisher": {
+        "@id": "https://bodyshapecalculator.net/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://bodyshapecalculator.net/ffmi-calculator/#breadcrumb"
+      },
+      "datePublished": "2026-10-28",
+      "dateModified": "2026-10-28",
+      "primaryImageOfPage": {
+        "@id": "https://bodyshapecalculator.net/ffmi-calculator/#img1"
+      },
+      "image": [
+        {
+          "@id": "https://bodyshapecalculator.net/ffmi-calculator/#img1"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://bodyshapecalculator.net/ffmi-calculator/#app"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Fat-free mass index"
+        },
+        {
+          "@type": "Thing",
+          "name": "Lean body mass"
+        },
+        {
+          "@type": "Thing",
+          "name": "Muscle mass"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bodyshapecalculator.net/#website",
+      "url": "https://bodyshapecalculator.net/",
+      "name": "Body Shape Calculator",
+      "publisher": {
+        "@id": "https://bodyshapecalculator.net/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bodyshapecalculator.net/#organization",
+      "name": "Body Shape Calculator",
+      "url": "https://bodyshapecalculator.net/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bodyshapecalculator.net/assets/images/body_shape_calculator_faveicon.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bodyshapecalculator.net/ffmi-calculator/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bodyshapecalculator.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Body Fat Percentage Chart",
+          "item": "https://bodyshapecalculator.net/body-fat-percentage-chart/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "FFMI Calculator",
+          "item": "https://bodyshapecalculator.net/ffmi-calculator/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://bodyshapecalculator.net/ffmi-calculator/#app",
+      "name": "FFMI Calculator",
+      "url": "https://bodyshapecalculator.net/ffmi-calculator/",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Raw and normalized FFMI",
+        "Lean and fat mass",
+        "Body fat estimate from neck and waist (U.S. Navy method)",
+        "FFMI category for men and women",
+        "Natural-limit lean mass and weight"
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://bodyshapecalculator.net/ffmi-calculator/#img1",
+      "contentUrl": "https://bodyshapecalculator.net/assets/images/ffmi-chart-men-women.webp",
+      "url": "https://bodyshapecalculator.net/assets/images/ffmi-chart-men-women.webp",
+      "width": 1600,
+      "height": 720,
+      "name": "FFMI chart for men and women",
+      "caption": "Normalized FFMI categories for men and women.",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://bodyshapecalculator.net/ffmi-calculator/#howto",
+      "name": "How to calculate FFMI",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Weigh yourself",
+          "text": "Weigh yourself in the morning, before eating, in light clothing.",
+          "url": "https://bodyshapecalculator.net/ffmi-calculator/#formula"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Estimate body fat",
+          "text": "Use a DEXA scan, calipers, a smart scale or the U.S. Navy tape method. The calculator can estimate it from your neck and waist.",
+          "url": "https://bodyshapecalculator.net/ffmi-calculator/#formula"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Find lean mass",
+          "text": "Multiply your weight by (1 minus your body fat as a decimal). At 80 kg and 15% body fat, lean mass is 80 × 0.85 = 68 kg.",
+          "url": "https://bodyshapecalculator.net/ffmi-calculator/#formula"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Divide by height squared",
+          "text": "Divide lean mass in kg by height in meters squared. 68 ÷ (1.78 × 1.78) = 21.5.",
+          "url": "https://bodyshapecalculator.net/ffmi-calculator/#formula"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Normalize for height",
+          "text": "Add 6.1 × (1.8 − height in meters). For 1.78 m, add 0.12, giving a normalized FFMI of 21.6.",
+          "url": "https://bodyshapecalculator.net/ffmi-calculator/#formula"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bodyshapecalculator.net/ffmi-calculator/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is FFMI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FFMI, or fat-free mass index, is your lean body mass in kilograms divided by your height in meters squared. It works like BMI but leaves out body fat, so it measures how much muscle and other lean tissue you carry for your height."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate FFMI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "First find lean mass: weight × (1 − body fat percentage). Then divide lean mass in kg by height in meters squared. Normalized FFMI adds 6.1 × (1.8 − height in meters) to adjust for height."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good FFMI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For men, an FFMI of about 17 to 20 is average, 20 to 22 shows clear training, and 22 to 25 is very muscular. For women, about 14.5 to 17 is average and 17 to 20 is well trained."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the natural FFMI limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In a 1995 study of 157 male athletes by Kouri and colleagues, drug-free lifters rarely exceeded a normalized FFMI of about 25, while many steroid users did. An FFMI above 25 is not proof of drug use, but it is uncommon without it. For women, about 21 to 22 is often given as a practical ceiling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the average FFMI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In a study of almost 3,000 healthy Swiss men and 2,650 women, FFMI for people with a normal BMI ranged from about 16.7 to 19.8 for men and 14.6 to 16.8 for women."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between FFMI and normalized FFMI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Raw FFMI tends to be slightly higher in tall people. Normalized FFMI adjusts every result to a height of 1.8 m so that tall and short people can be compared fairly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is FFMI better than BMI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For muscular people, yes. BMI cannot tell muscle from fat, so a lean, muscular person can be labeled overweight. FFMI separates the two, but it depends on an accurate body fat estimate."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/assets/css/tools.css">
+<style></style>
+
+<div class="tp-wrap">
+  <div class="tp-container">
+    <header class="tp-header">
+      <p class="tp-eyebrow">Calculator &middot; Chart &middot; Muscle potential</p>
+      <h1 class="tp-h1">FFMI Calculator<span class="tp-sr"> </span><small class="tp-h1-sub">Fat-Free Mass Index, FFMI Chart and Natural Limit</small></h1>
+      <p class="tp-subtitle">Enter your height, weight and body fat (or estimate it with a tape measure) to get your FFMI, your category and your natural muscle potential.</p>
+      <p class="tp-updated">Updated <time datetime="2026-10-28">October 28, 2026</time></p>
+    </header>
+  </div>
+
+  <div class="tp-mstripwrap" aria-hidden="true"><span class="tp-mlabel">Your FFMI</span> <span id="tp-mstrip">&mdash;</span></div>
+  <div class="tp-tool" id="tp-tool">
+    <form class="tp-panel" onsubmit="return false" aria-label="FFMI calculator">
+      <div class="tp-seg-row">
+        <div class="tp-seg" role="group" aria-label="Sex"><button type="button" data-sex="m" aria-pressed="true">Male</button><button type="button" data-sex="f" aria-pressed="false">Female</button></div>
+        <div class="tp-seg" role="group" aria-label="Units"><button type="button" data-unit="us" aria-pressed="true">ft / lb</button><button type="button" data-unit="metric" aria-pressed="false">cm / kg</button></div>
+      </div>
+      <div class="tp-grid">
+        <div class="tp-field" id="tp-h-us"><span>Height</span><span class="tp-inp-pair"><span class="tp-inp"><input id="tp-ft" type="number" inputmode="numeric" min="4" max="7" aria-label="Height, feet"><i>ft</i></span><span class="tp-inp"><input id="tp-in" type="number" inputmode="decimal" min="0" max="11.9" aria-label="Height, inches"><i>in</i></span></span></div>
+        <label class="tp-field" id="tp-h-m" hidden><span>Height</span><span class="tp-inp"><input id="tp-cm" type="number" inputmode="decimal" min="120" max="230"><i>cm</i></span></label>
+        <label class="tp-field"><span>Weight</span><span class="tp-inp"><input id="tp-wt" type="number" inputmode="decimal" min="30" max="550" step="0.1"><i id="tp-wt-u">lb</i></span></label>
+      </div>
+      <p class="tp-flab" style="margin-top:14px">Body fat</p>
+      <div class="tp-seg tp-seg-full" role="group" aria-label="Body fat input"><button type="button" data-bfm="known" aria-pressed="true">I know it</button><button type="button" data-bfm="navy" aria-pressed="false">Estimate it</button></div>
+      <div class="tp-grid">
+        <label class="tp-field tp-full" id="tp-bf-row"><span>Body fat percentage</span><span class="tp-inp tp-inp-big"><input id="tp-bf" type="number" inputmode="decimal" min="3" max="60" step="0.1"><i>%</i></span></label>
+      </div>
+      <div class="tp-grid" id="tp-navy" hidden>
+        <label class="tp-field"><span>Neck</span><span class="tp-inp"><input id="tp-neck" type="number" inputmode="decimal" step="0.1"><i class="tp-lu">in</i></span></label>
+        <label class="tp-field"><span>Waist <small>(navel)</small></span><span class="tp-inp"><input id="tp-waist" type="number" inputmode="decimal" step="0.1"><i class="tp-lu">in</i></span></label>
+        <label class="tp-field tp-full" id="tp-hip-row" hidden><span>Hips <small>(widest)</small></span><span class="tp-inp"><input id="tp-hip" type="number" inputmode="decimal" step="0.1"><i class="tp-lu">in</i></span></label>
+      </div>
+      <p class="tp-err" id="tp-err" role="alert" hidden></p>
+      <p class="tp-hint">Example values are filled in. Not sure of your body fat? See the <a href="/body-fat-percentage-chart/">body fat percentage chart</a>.</p>
+      <p class="tp-privacy">Runs in your browser. Nothing you enter is sent or stored.</p>
+    </form>
+    <section class="tp-out" id="tp-out" aria-live="polite" aria-label="Your result">
+      <div class="tp-result">
+        <div class="tp-big"><span class="tp-big-l">Normalized FFMI</span><b id="tp-ffmi">&mdash;</b><span id="tp-cat" class="tp-pill">&mdash;</span></div>
+        <div class="tp-meta"><div><span>Raw FFMI</span><b id="tp-raw">&mdash;</b></div><div><span>Body fat</span><b id="tp-bfo">&mdash;</b></div></div>
+      </div>
+      <div class="tp-scalewrap">
+        <div class="tp-scale"><div class="tp-bands"><i class="tp-c1"></i><i class="tp-c3"></i><i class="tp-c2"></i><i class="tp-c4"></i><i class="tp-c4" style="opacity:.6"></i><i class="tp-c5"></i></div><span class="tp-marker" id="tp-marker"></span></div>
+        <div class="tp-ticks" id="tp-ticks"></div>
+      </div>
+      <div class="tp-cards">
+        <div class="tp-card"><span>Lean mass</span><b id="tp-lean">&mdash;</b><small>everything but fat</small></div>
+        <div class="tp-card"><span>Fat mass</span><b id="tp-fat">&mdash;</b><small>&nbsp;</small></div>
+        <div class="tp-card"><span>Natural-limit weight</span><b id="tp-pot">&mdash;</b><small>at FFMI 25 (men) / 21.5 (women)</small></div>
+      </div>
+      <p class="tp-line" id="tp-line"></p>
+    </section>
+  </div>
+
+  <article class="tp-article">
+
+  <div class="tp-answer" id="quick-answer"><p><strong>Quick answer:</strong> FFMI = lean mass (kg) &divide; height (m)&sup2;. For men, <strong>17&ndash;20 is average</strong>, 20&ndash;22 trained and 22&ndash;25 very muscular; about <strong>25 is the natural limit</strong>. For women, 14.5&ndash;17 is average.</p></div>
+
+  <nav class="pg-toc pg-toc--serif" id="page-contents" aria-label="Inside this FFMI guide">
+    <details open>
+      <summary><span class="pg-toc-title">Inside this FFMI guide</span></summary>
+      <ol>
+        <li><a href="#what">What is FFMI?</a></li>
+        <li><a href="#chart">FFMI chart</a></li>
+        <li><a href="#formula">FFMI formula</a></li>
+        <li><a href="#limit">The natural FFMI limit</a></li>
+        <li><a href="#bodyfat">FFMI and body fat accuracy</a></li>
+        <li><a href="#improve">How to raise your FFMI</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </details>
+  </nav>
+
+  <section id="what" aria-labelledby="what-h">
+    <h2 id="what-h">What Is FFMI?</h2>
+    <p>The <strong>fat-free mass index</strong> is a height-adjusted measure of how much lean mass you carry: muscle, bone, organs and water. Because it leaves out fat, it shows muscularity in a way BMI cannot. Two men can both have a BMI of 27; one may have an FFMI of 19 and 25% body fat, the other an FFMI of 23 and 12% body fat.</p>
+    <figure class="tp-fig"><img src="/assets/images/ffmi-chart-men-women.webp" width="1600" height="720" loading="lazy" decoding="async" alt="FFMI chart for men and women with categories from below average to rarely natural"><figcaption>FFMI categories for men and women.</figcaption></figure>
+  </section>
+
+  <section id="chart" aria-labelledby="chart-h">
+    <h2 id="chart-h">FFMI Chart for Men and Women</h2>
+    <div class="tp-tablewrap"><table class="tp-table tp-num"><caption>Normalized FFMI categories</caption><thead><tr><th scope="col">Category</th><th scope="col">Men</th><th scope="col">Women</th></tr></thead><tbody><tr><th scope="row">Below average</th><td>under 17</td><td>under 14.5</td></tr><tr><th scope="row">Average</th><td>17&ndash;20</td><td>14.5&ndash;17</td></tr><tr><th scope="row">Trained</th><td>20&ndash;22</td><td>17&ndash;18.5</td></tr><tr><th scope="row">Very muscular</th><td>22&ndash;23.5</td><td>18.5&ndash;20</td></tr><tr><th scope="row">Elite natural</th><td>23.5&ndash;25</td><td>20&ndash;21.5</td></tr><tr><th scope="row">Rarely reached naturally</th><td>over 25</td><td>over 21.5</td></tr></tbody></table></div>
+    <p>Average ranges come from Kyle and colleagues&rsquo; study of almost 5,700 healthy adults; the upper bands reflect what trained lifters reach. Category names are a practical guide, not medical labels.</p>
+  </section>
+
+  <section id="formula" aria-labelledby="formula-h">
+    <h2 id="formula-h">FFMI Formula</h2>
+    <p class="tp-note" style="font-size:16px!important"><span class="tp-kbd">Lean mass = weight &times; (1 &minus; body fat %)</span><br><span class="tp-kbd">FFMI = lean mass (kg) &divide; height (m)&sup2;</span><br><span class="tp-kbd">Normalized FFMI = FFMI + 6.1 &times; (1.8 &minus; height in m)</span></p>
+    <ol class="tp-steps"><li><strong>Weigh yourself.</strong> Weigh yourself in the morning, before eating, in light clothing.</li><li><strong>Estimate body fat.</strong> Use a DEXA scan, calipers, a smart scale or the U.S. Navy tape method. The calculator can estimate it from your neck and waist.</li><li><strong>Find lean mass.</strong> Multiply your weight by (1 minus your body fat as a decimal). At 80 kg and 15% body fat, lean mass is 80 × 0.85 = 68 kg.</li><li><strong>Divide by height squared.</strong> Divide lean mass in kg by height in meters squared. 68 ÷ (1.78 × 1.78) = 21.5.</li><li><strong>Normalize for height.</strong> Add 6.1 × (1.8 − height in meters). For 1.78 m, add 0.12, giving a normalized FFMI of 21.6.</li></ol>
+  </section>
+
+  <section id="limit" aria-labelledby="limit-h">
+    <h2 id="limit-h">The Natural FFMI Limit</h2>
+    <p>In 1995, Kouri and colleagues measured 157 male athletes, 83 drug-free and 74 who had used anabolic steroids. The drug-free men topped out around a normalized FFMI of 25, while many users went beyond it. Later work has found a few drug-free athletes slightly above 25, so it is a rough ceiling rather than a test.</p>
+    <div class="tp-tablewrap"><table class="tp-table tp-num"><caption>Weight at 12% body fat for a given FFMI</caption><thead><tr><th scope="col">Height</th><th scope="col">FFMI 20</th><th scope="col">FFMI 22</th><th scope="col">FFMI 25</th></tr></thead><tbody><tr><th scope="row">5 ft 6 in</th><td>136 lb</td><td>150 lb</td><td>171 lb</td></tr><tr><th scope="row">5 ft 10 in</th><td>157 lb</td><td>173 lb</td><td>197 lb</td></tr><tr><th scope="row">6 ft 2 in</th><td>181 lb</td><td>199 lb</td><td>226 lb</td></tr></tbody></table></div>
+    <p>Most men who train hard for years land between 22 and 24. Reaching the upper end usually takes a large frame as well as time; see <a href="/average-wrist-size/">average wrist size</a> and the <a href="/body-frame-size-calculator/">frame size calculator</a>.</p>
+  </section>
+
+  <section id="bodyfat" aria-labelledby="bodyfat-h">
+    <h2 id="bodyfat-h">FFMI Depends on Your Body Fat Estimate</h2>
+    <p>FFMI is only as accurate as the body fat number behind it. A 3-point error in body fat moves FFMI by about 0.6 to 0.8. DEXA is the most accurate common method; tape measures and smart scales are rougher. Track change over time with the same method, and use the <a href="/body-fat-percentage-chart/">body fat percentage chart</a> to sanity-check your number against pictures.</p>
+  </section>
+
+  <section id="improve" aria-labelledby="improve-h">
+    <h2 id="improve-h">How to Raise Your FFMI</h2>
+    <p>FFMI rises only when lean mass rises. That means progressive resistance training for all major muscle groups, enough protein (about 1.6&nbsp;g per kg of body weight per day is a common evidence-based target), a small calorie surplus or maintenance, and sleep. Beginners can gain several kilograms of lean mass in the first year; gains slow to a fraction of that after a few years.</p>
+    <p>See how your build compares in other ways with the <a href="/average-bicep-size/">average bicep size</a>, <a href="/shoulder-to-waist-ratio-calculator/">shoulder-to-waist ratio</a> and the <a href="/body-visualizer/">3D body visualizer</a>.</p>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">FFMI FAQ</h2>
+      <details class="tp-faq"><summary><h3>What is FFMI?</h3></summary><p>FFMI, or fat-free mass index, is your lean body mass in kilograms divided by your height in meters squared. It works like BMI but leaves out body fat, so it measures how much muscle and other lean tissue you carry for your height.</p></details>
+      <details class="tp-faq"><summary><h3>How do you calculate FFMI?</h3></summary><p>First find lean mass: weight × (1 − body fat percentage). Then divide lean mass in kg by height in meters squared. Normalized FFMI adds 6.1 × (1.8 − height in meters) to adjust for height.</p></details>
+      <details class="tp-faq"><summary><h3>What is a good FFMI?</h3></summary><p>For men, an FFMI of about 17 to 20 is average, 20 to 22 shows clear training, and 22 to 25 is very muscular. For women, about 14.5 to 17 is average and 17 to 20 is well trained.</p></details>
+      <details class="tp-faq"><summary><h3>What is the natural FFMI limit?</h3></summary><p>In a 1995 study of 157 male athletes by Kouri and colleagues, drug-free lifters rarely exceeded a normalized FFMI of about 25, while many steroid users did. An FFMI above 25 is not proof of drug use, but it is uncommon without it. For women, about 21 to 22 is often given as a practical ceiling.</p></details>
+      <details class="tp-faq"><summary><h3>What is the average FFMI?</h3></summary><p>In a study of almost 3,000 healthy Swiss men and 2,650 women, FFMI for people with a normal BMI ranged from about 16.7 to 19.8 for men and 14.6 to 16.8 for women.</p></details>
+      <details class="tp-faq"><summary><h3>What is the difference between FFMI and normalized FFMI?</h3></summary><p>Raw FFMI tends to be slightly higher in tall people. Normalized FFMI adjusts every result to a height of 1.8 m so that tall and short people can be compared fairly.</p></details>
+      <details class="tp-faq"><summary><h3>Is FFMI better than BMI?</h3></summary><p>For muscular people, yes. BMI cannot tell muscle from fat, so a lean, muscular person can be labeled overweight. FFMI separates the two, but it depends on an accurate body fat estimate.</p></details>
+  </section>
+
+  <section id="related" aria-labelledby="related-h">
+    <h2 id="related-h">Related Tools</h2>
+    <ul class="tp-related"><li><a href="/body-fat-percentage-chart/">Body Fat Percentage Chart</a><span>Check your body fat with 3D pictures.</span></li><li><a href="/average-bicep-size/">Average Bicep Size</a><span>Arm size percentiles.</span></li><li><a href="/shoulder-to-waist-ratio-calculator/">Shoulder-to-Waist Ratio Calculator</a><span>Adonis index.</span></li><li><a href="/male-body-type-calculator/">Male Body Type Calculator</a><span>Your build.</span></li><li><a href="/body-frame-size-calculator/">Body Frame Size Calculator</a><span>Frame affects muscle potential.</span></li><li><a href="/body-visualizer/">Body Visualizer</a><span>See your body in 3D.</span></li></ul>
+  </section>
+
+  <section id="sources" aria-labelledby="sources-h">
+    <h2 id="sources-h">Sources</h2>
+    <ul class="tp-sources"><li>Kouri EM, Pope HG, Katz DL, Oliva P. Fat-free mass index in users and nonusers of anabolic-androgenic steroids. <em>Clinical Journal of Sport Medicine</em>. 1995;5(4):223&ndash;228.</li><li>Kyle UG, Schutz Y, Dupertuis YM, Pichard C. Body composition interpretation: contributions of the fat-free mass index and the body fat mass index. <em>Nutrition</em>. 2003;19(7&ndash;8):597&ndash;604.</li><li>Morton RW, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. <em>British Journal of Sports Medicine</em>. 2018;52:376&ndash;384.</li></ul>
+    <p class="tp-note">FFMI depends on your body fat estimate. Categories are a guide, not a diagnosis. For general information only.</p>
+  </section>
+
+  </article>
+</div>
+
+<script src="/assets/js/ffmi-calculator.js" defer></script>
