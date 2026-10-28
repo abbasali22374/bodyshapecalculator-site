@@ -374,9 +374,15 @@ root.addEventListener("keydown",function(e){
       "url": "https://bodyshapecalculator.net/body-frame-size-calculator/",
       "name": "Body Frame Size Calculator – Small, Medium or Large",
       "description": "Use our body frame size calculator to find your small, medium, or large frame using height and wrist circumference. Get BMI results in US or metric units.",
-      "isPartOf": { "@id": "https://bodyshapecalculator.net/#website" },
-      "breadcrumb": { "@id": "https://bodyshapecalculator.net/body-frame-size-calculator/#breadcrumb" },
-      "mainEntity": { "@id": "https://bodyshapecalculator.net/body-frame-size-calculator/#calculator" },
+      "isPartOf": {
+        "@id": "https://bodyshapecalculator.net/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://bodyshapecalculator.net/body-frame-size-calculator/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://bodyshapecalculator.net/body-frame-size-calculator/#calculator"
+      },
       "inLanguage": "en-US"
     },
     {
@@ -405,19 +411,62 @@ root.addEventListener("keydown",function(e){
       "@type": "BreadcrumbList",
       "@id": "https://bodyshapecalculator.net/body-frame-size-calculator/#breadcrumb",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Body Shape Calculator", "item": "https://bodyshapecalculator.net/" },
-        { "@type": "ListItem", "position": 2, "name": "Body Frame Size Calculator", "item": "https://bodyshapecalculator.net/body-frame-size-calculator/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bodyshapecalculator.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Body Calculators",
+          "item": "https://bodyshapecalculator.net/body-calculators/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Body Frame Size Calculator",
+          "item": "https://bodyshapecalculator.net/body-frame-size-calculator/"
+        }
       ]
     },
     {
       "@type": "FAQPage",
       "@id": "https://bodyshapecalculator.net/body-frame-size-calculator/#faq",
       "mainEntity": [
-        { "@type": "Question", "name": "Can you tell body shape from height and weight alone?", "acceptedAnswer": { "@type": "Answer", "text": "No. Body shape such as hourglass, pear, apple, or rectangle is determined by the relationship between body measurements such as the bust, waist, and hips. Height and weight alone cannot determine body shape. They can be used to calculate BMI and, with wrist circumference, estimate body frame size." } },
-        { "@type": "Question", "name": "What's the difference between body frame size and body shape?", "acceptedAnswer": { "@type": "Answer", "text": "Body frame size describes your underlying skeletal build as small, medium, or large. Body shape describes the proportions between areas such as the bust, waist, and hips. Frame size and body shape are different measurements that answer different questions." } },
-        { "@type": "Question", "name": "Does frame size change if I lose or gain weight?", "acceptedAnswer": { "@type": "Answer", "text": "Body frame size is primarily related to bone structure and generally does not meaningfully change in adulthood because of weight loss, weight gain, or muscle gain." } },
-        { "@type": "Question", "name": "Is the wrist method accurate for determining frame size?", "acceptedAnswer": { "@type": "Answer", "text": "The wrist method is a commonly used estimate of body frame size based on the relationship between height and wrist circumference. It is a practical proxy for skeletal build rather than a clinical or laboratory-grade skeletal assessment." } },
-        { "@type": "Question", "name": "Can I use the calculator without measuring my wrist?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can enter your height and weight to calculate BMI. A wrist measurement is needed to estimate your body frame size as small, medium, or large." } }
+        {
+          "@type": "Question",
+          "name": "Can you tell body shape from height and weight alone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Body shape such as hourglass, pear, apple, or rectangle is determined by the relationship between body measurements such as the bust, waist, and hips. Height and weight alone cannot determine body shape. They can be used to calculate BMI and, with wrist circumference, estimate body frame size."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between body frame size and body shape?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Body frame size describes your underlying skeletal build as small, medium, or large. Body shape describes the proportions between areas such as the bust, waist, and hips. Frame size and body shape are different measurements that answer different questions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does frame size change if I lose or gain weight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Body frame size is primarily related to bone structure and generally does not meaningfully change in adulthood because of weight loss, weight gain, or muscle gain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the wrist method accurate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The wrist method is a commonly used estimate of body frame size based on the relationship between height and wrist circumference. It is a practical proxy for skeletal build rather than a clinical or laboratory-grade skeletal assessment."
+          }
+        }
       ]
     }
   ]

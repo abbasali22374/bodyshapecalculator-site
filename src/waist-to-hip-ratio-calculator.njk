@@ -4,6 +4,124 @@ title: Waist-to-Hip Ratio Calculator – Check Your WHR
 description: Calculate your waist-to-hip ratio (WHR) using waist and hip measurements and check it against the WHO's abdominal obesity thresholds for men and women.
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://bodyshapecalculator.net/waist-to-hip-ratio-calculator/#webpage",
+      "url": "https://bodyshapecalculator.net/waist-to-hip-ratio-calculator/",
+      "name": "Waist-to-Hip Ratio Calculator – Check Your WHR",
+      "description": "Calculate your waist-to-hip ratio (WHR) using waist and hip measurements and check it against the WHO's abdominal obesity thresholds for men and women.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://bodyshapecalculator.net/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://bodyshapecalculator.net/waist-to-hip-ratio-calculator/#breadcrumb"
+      },
+      "dateModified": "2026-10-28"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://bodyshapecalculator.net/waist-to-hip-ratio-calculator/#app",
+      "name": "Waist-to-Hip Ratio Calculator",
+      "url": "https://bodyshapecalculator.net/waist-to-hip-ratio-calculator/",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Calculates waist-to-hip ratio from waist and hip measurements and compares it with WHO abdominal obesity thresholds for men and women."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bodyshapecalculator.net/waist-to-hip-ratio-calculator/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bodyshapecalculator.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Body Calculators",
+          "item": "https://bodyshapecalculator.net/body-calculators/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Waist-to-Hip Ratio Calculator",
+          "item": "https://bodyshapecalculator.net/waist-to-hip-ratio-calculator/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bodyshapecalculator.net/waist-to-hip-ratio-calculator/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a healthy waist-to-hip ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under 0.85 for women and under 0.90 for men is below the WHO's threshold for abdominal obesity. Lower generally reflects less abdominal fat relative to hip size, though \"healthy\" depends on more than one number. For the overall picture, check where you sit on the body fat percentage chart."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does waist-to-hip ratio work the same way for men and women?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The calculation is identical — waist divided by hip — but the risk thresholds differ, because typical fat distribution and hip structure differ by sex. That's why this calculator asks which set of thresholds to apply before showing a risk category."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is WHR more accurate than BMI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For predicting cardiovascular risk specifically, several large studies — including the INTERHEART study across more than 50 countries — found WHR outperformed BMI, because it accounts for fat distribution rather than just overall weight relative to height. BMI still has value as a quick, simple screening number; the two measure different things and work best together rather than as substitutes for each other."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you lower your WHR through exercise or diet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Abdominal fat specifically tends to respond to overall fat loss through diet and consistent exercise, including both cardio and strength training, though there's no way to target-reduce fat from one area alone. Your hip measurement — driven mostly by bone structure and muscle rather than fat — changes far less, so most movement in WHR over time comes from the waist side of the equation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My WHR result and my body shape result don't seem to match — why?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They're measuring related but different things. Body shape compares bust, waist and hips together; WHR only looks at waist and hip. A top hourglass and a true hourglass can post very similar WHR numbers despite being different shapes, because the bust measurement — which separates them — isn't part of the WHR calculation at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate is an online WHR calculator compared to a clinical measurement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The math itself is simple and exact — the only source of error is how carefully you measure. A clinician measuring you in person removes some of the inconsistency that comes with self-measuring (tape too loose, wrong landmark, inconsistent breathing), but the formula is identical either way. If your result sits right on a risk-category boundary, it's worth re-measuring carefully before drawing conclusions from it."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
 <style id="whrc-css">
 .whrc-wrap *,.whrc-wrap *::before,.whrc-wrap *::after{box-sizing:border-box;margin:0;padding:0}
 .whrc-wrap{--whrc-bg:#0d0d0d;--whrc-card:#1e1e1e;--whrc-gold:#c9a84c;--whrc-gold-l:#e8c97a;--whrc-cream:#f5efe0;--whrc-muted:#8a8a8a;--whrc-border:#2a2a2a;--whrc-text:#f0e8d8;--whrc-serif:"Playfair Display",Georgia,"Times New Roman",serif;--whrc-sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-family:var(--whrc-sans);background:var(--whrc-bg);color:var(--whrc-text);border-radius:20px;overflow:hidden;position:relative;line-height:1.6;-webkit-font-smoothing:antialiased}
