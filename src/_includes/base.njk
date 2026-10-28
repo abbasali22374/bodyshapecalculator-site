@@ -53,81 +53,50 @@
   <header class="site-header">
     <div class="site-header-inner">
       <a href="/" class="site-logo">Body<span>Shape</span>Calculator</a>
+      {%- set _slug = page.url | replace("/", "") -%}
+      {%- set _c = crumbs.pages[_slug] -%}
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Body Type Calculator</a>
-        <a href="/male-body-type-calculator/" {% if page.url == "/male-body-type-calculator/" %}class="active"{% endif %}>For Men</a>
-        <a href="/waist-to-hip-ratio-calculator/" {% if page.url == "/waist-to-hip-ratio-calculator/" %}class="active"{% endif %}>WHR</a>
-        <a href="/waist-to-height-ratio-calculator/" {% if page.url == "/waist-to-height-ratio-calculator/" %}class="active"{% endif %}>WHtR</a>
-        <a href="/body-frame-size-calculator/" {% if page.url == "/body-frame-size-calculator/" %}class="active"{% endif %}>Frame Size</a>
-        <a href="/body-visualizer/" {% if page.url == "/body-visualizer/" %}class="active"{% endif %}>Visualizer</a>
-        <a href="/body-proportions-calculator/" {% if page.url == "/body-proportions-calculator/" %}class="active"{% endif %}>Proportions</a>
+        <a href="/" class="nav-top{% if page.url == "/" %} active{% endif %}">Body Type Calculator</a>
+        {%- for k, h in crumbs.hubs %}
+        <div class="nav-item">
+          <a href="{{ h.url }}" class="nav-top{% if (_c and _c.hub == k) or page.url == h.url %} active{% endif %}">{{ h.short }}</a>
+          <div class="nav-drop">
+            <a href="{{ h.url }}" class="nav-all">All {{ h.name }}</a>
+            {%- for s, p in crumbs.pages %}{% if p.hub == k %}
+            <a href="/{{ s }}/"{% if s == _slug %} aria-current="page"{% endif %}>{{ p.label }}</a>
+            {%- endif %}{% endfor %}
+          </div>
+        </div>
+        {%- endfor %}
       </nav>
     </div>
   </header>
+
+  {%- if _c %}
+  <nav class="site-crumbs" aria-label="Breadcrumb"><ol>
+    <li><a href="/">Home</a></li>
+    {%- if _c.hub %}
+    <li><a href="{{ crumbs.hubs[_c.hub].url }}">{{ crumbs.hubs[_c.hub].name }}</a></li>
+    {%- endif %}
+    <li><span aria-current="page">{{ _c.label }}</span></li>
+  </ol></nav>
+  {%- endif %}
 
   {{ content | safe }}
 
   <footer class="site-footer">
     <div class="site-footer-inner">
+      {%- for k, h in crumbs.hubs %}
       <div class="site-footer-col">
-        <p class="site-footer-heading">Tools</p>
+        <p class="site-footer-heading"><a href="{{ h.url }}">{{ h.name }}</a></p>
+        {%- if k == "shapes" %}
         <a href="/">Body Type Calculator</a>
-        <a href="/male-body-type-calculator/">Body Type Calculator for Men</a>
-        <a href="/waist-to-hip-ratio-calculator/">Waist to Hip Ratio Calculator</a>
-        <a href="/waist-to-height-ratio-calculator/">Waist to Height Ratio Calculator</a>
-        <a href="/body-frame-size-calculator/">Body Frame Size Calculator</a>
-        <a href="/body-visualizer/">Body Visualizer</a>
-        <a href="/body-proportions-calculator/">Body Proportions Calculator</a>
+        {%- endif %}
+        {%- for s, p in crumbs.pages %}{% if p.hub == k %}
+        <a href="/{{ s }}/">{{ p.label }}</a>
+        {%- endif %}{% endfor %}
       </div>
-      <div class="site-footer-col">
-        <p class="site-footer-heading">Shape Guides</p>
-        <a href="/hourglass-body-shape/">Hourglass Body Shape</a>
-        <a href="/pear-body-shape/">Pear Body Shape</a>
-        <a href="/apple-body-shape/">Apple Body Shape</a>
-        <a href="/inverted-triangle-body-shape/">Inverted Triangle Body Shape</a>
-        <a href="/body-measurements/">Body Measurements</a>
-      </div>
-      <div class="site-footer-col">
-        <p class="site-footer-heading">Body &amp; Face</p>
-        <a href="/body-fat-percentage-chart/">Body Fat Percentage Chart</a>
-        <a href="/ffmi-calculator/">FFMI Calculator</a>
-        <a href="/shoulder-to-waist-ratio-calculator/">Shoulder-to-Waist Ratio Calculator</a>
-        <a href="/shoulder-to-hip-ratio-calculator/">Shoulder-to-Hip Ratio Calculator</a>
-        <a href="/average-shoulder-width/">Average Shoulder Width</a>
-        <a href="/average-waist-size-men/">Average Waist Size for Men</a>
-        <a href="/average-bicep-size/">Average Bicep Size</a>
-        <a href="/average-thigh-size/">Average Thigh Size</a>
-        <a href="/average-wrist-size/">Average Wrist Size</a>
-        <a href="/average-hand-size/">Average Hand Size</a>
-        <a href="/long-torso/">Long Torso</a>
-        <a href="/face-symmetry-test/">Face Symmetry Test</a>
-        <a href="/golden-ratio-face-calculator/">Golden Ratio Face Calculator</a>
-      </div>
-      <div class="site-footer-col">
-        <p class="site-footer-heading">Height &amp; Conversions</p>
-        <a href="/height-comparison/">Height Comparison</a>
-        <a href="/average-height-by-country/">Average Height by Country</a>
-        <a href="/height-percentile-calculator/">Height Percentile Calculator</a>
-        <a href="/height-calculator/">Height Calculator</a>
-        <a href="/how-to-write-height/">How to Write Height</a>
-        <a href="/inches-to-cm/">Inches to cm</a>
-        <a href="/feet-to-cm/">Feet to cm</a>
-        <a href="/cm-to-feet-and-inches/">cm to Feet and Inches</a>
-        <a href="/feet-to-inches/">Feet to Inches</a>
-      </div>
-      <div class="site-footer-col">
-        <p class="site-footer-heading">Fitness &amp; Nutrition</p>
-        <a href="/max-heart-rate-calculator/">Max Heart Rate Calculator</a>
-        <a href="/heart-rate-zone-calculator/">Heart Rate Zone Calculator</a>
-        <a href="/vo2-max-calculator/">VO2 Max Calculator</a>
-        <a href="/running-pace-calculator/">Running Pace Calculator</a>
-        <a href="/stride-length-calculator/">Stride Length Calculator</a>
-        <a href="/steps-to-distance-calculator/">Steps to Distance Calculator</a>
-        <a href="/macro-calculator/">Macro Calculator</a>
-        <a href="/protein-calculator/">Protein Calculator</a>
-        <a href="/fiber-calculator/">Fiber Calculator</a>
-        <a href="/water-intake-calculator/">Water Intake Calculator</a>
-      </div>
+      {%- endfor %}
       <div class="site-footer-col">
         <p class="site-footer-heading">Company</p>
         <a href="/about-us/">About Us</a>

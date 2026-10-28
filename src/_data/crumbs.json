@@ -1,0 +1,233 @@
+{
+ "hubs": {
+  "shapes": {
+   "url": "/body-shapes/",
+   "name": "Body Shapes",
+   "short": "Body Shapes"
+  },
+  "calc": {
+   "url": "/body-calculators/",
+   "name": "Body Calculators",
+   "short": "Calculators"
+  },
+  "meas": {
+   "url": "/average-body-measurements/",
+   "name": "Body Measurements",
+   "short": "Measurements"
+  },
+  "height": {
+   "url": "/height/",
+   "name": "Height",
+   "short": "Height"
+  },
+  "fitness": {
+   "url": "/fitness-calculators/",
+   "name": "Fitness & Nutrition",
+   "short": "Fitness"
+  }
+ },
+ "pages": {
+  "male-body-type-calculator": {
+   "hub": "shapes",
+   "label": "Male Body Type Calculator"
+  },
+  "hourglass-body-shape": {
+   "hub": "shapes",
+   "label": "Hourglass Body Shape"
+  },
+  "pear-body-shape": {
+   "hub": "shapes",
+   "label": "Pear Body Shape"
+  },
+  "apple-body-shape": {
+   "hub": "shapes",
+   "label": "Apple Body Shape"
+  },
+  "inverted-triangle-body-shape": {
+   "hub": "shapes",
+   "label": "Inverted Triangle Body Shape"
+  },
+  "long-torso": {
+   "hub": "shapes",
+   "label": "Long Torso"
+  },
+  "waist-to-hip-ratio-calculator": {
+   "hub": "calc",
+   "label": "Waist-to-Hip Ratio Calculator"
+  },
+  "waist-to-height-ratio-calculator": {
+   "hub": "calc",
+   "label": "Waist-to-Height Ratio Calculator"
+  },
+  "body-frame-size-calculator": {
+   "hub": "calc",
+   "label": "Body Frame Size Calculator"
+  },
+  "body-proportions-calculator": {
+   "hub": "calc",
+   "label": "Body Proportions Calculator"
+  },
+  "body-visualizer": {
+   "hub": "calc",
+   "label": "Body Visualizer"
+  },
+  "shoulder-to-waist-ratio-calculator": {
+   "hub": "calc",
+   "label": "Shoulder-to-Waist Ratio Calculator"
+  },
+  "shoulder-to-hip-ratio-calculator": {
+   "hub": "calc",
+   "label": "Shoulder-to-Hip Ratio Calculator"
+  },
+  "ffmi-calculator": {
+   "hub": "calc",
+   "label": "FFMI Calculator"
+  },
+  "body-fat-percentage-chart": {
+   "hub": "calc",
+   "label": "Body Fat Percentage Chart"
+  },
+  "golden-ratio-face-calculator": {
+   "hub": "calc",
+   "label": "Golden Ratio Face Calculator"
+  },
+  "face-symmetry-test": {
+   "hub": "calc",
+   "label": "Face Symmetry Test"
+  },
+  "body-measurements": {
+   "hub": "meas",
+   "label": "How to Measure Your Body"
+  },
+  "average-shoulder-width": {
+   "hub": "meas",
+   "label": "Average Shoulder Width"
+  },
+  "average-waist-size-men": {
+   "hub": "meas",
+   "label": "Average Waist Size for Men"
+  },
+  "average-bicep-size": {
+   "hub": "meas",
+   "label": "Average Bicep Size"
+  },
+  "average-thigh-size": {
+   "hub": "meas",
+   "label": "Average Thigh Size"
+  },
+  "average-wrist-size": {
+   "hub": "meas",
+   "label": "Average Wrist Size"
+  },
+  "average-hand-size": {
+   "hub": "meas",
+   "label": "Average Hand Size"
+  },
+  "height-comparison": {
+   "hub": "height",
+   "label": "Height Comparison"
+  },
+  "average-height-by-country": {
+   "hub": "height",
+   "label": "Average Height by Country"
+  },
+  "height-percentile-calculator": {
+   "hub": "height",
+   "label": "Height Percentile Calculator"
+  },
+  "height-calculator": {
+   "hub": "height",
+   "label": "Height Calculator"
+  },
+  "how-to-write-height": {
+   "hub": "height",
+   "label": "How to Write Height"
+  },
+  "inches-to-cm": {
+   "hub": "height",
+   "label": "Inches to cm"
+  },
+  "feet-to-cm": {
+   "hub": "height",
+   "label": "Feet to cm"
+  },
+  "cm-to-feet-and-inches": {
+   "hub": "height",
+   "label": "cm to Feet and Inches"
+  },
+  "feet-to-inches": {
+   "hub": "height",
+   "label": "Feet to Inches"
+  },
+  "max-heart-rate-calculator": {
+   "hub": "fitness",
+   "label": "Max Heart Rate Calculator"
+  },
+  "heart-rate-zone-calculator": {
+   "hub": "fitness",
+   "label": "Heart Rate Zone Calculator"
+  },
+  "vo2-max-calculator": {
+   "hub": "fitness",
+   "label": "VO2 Max Calculator"
+  },
+  "running-pace-calculator": {
+   "hub": "fitness",
+   "label": "Running Pace Calculator"
+  },
+  "stride-length-calculator": {
+   "hub": "fitness",
+   "label": "Stride Length Calculator"
+  },
+  "steps-to-distance-calculator": {
+   "hub": "fitness",
+   "label": "Steps to Distance Calculator"
+  },
+  "macro-calculator": {
+   "hub": "fitness",
+   "label": "Macro Calculator"
+  },
+  "protein-calculator": {
+   "hub": "fitness",
+   "label": "Protein Calculator"
+  },
+  "fiber-calculator": {
+   "hub": "fitness",
+   "label": "Fiber Calculator"
+  },
+  "water-intake-calculator": {
+   "hub": "fitness",
+   "label": "Water Intake Calculator"
+  },
+  "about-us": {
+   "label": "About Us"
+  },
+  "contact-us": {
+   "label": "Contact Us"
+  },
+  "privacy-policy": {
+   "label": "Privacy Policy"
+  },
+  "terms-and-conditions": {
+   "label": "Terms and Conditions"
+  },
+  "disclaimer": {
+   "label": "Disclaimer"
+  },
+  "body-shapes": {
+   "label": "Body Shapes"
+  },
+  "body-calculators": {
+   "label": "Body Calculators"
+  },
+  "average-body-measurements": {
+   "label": "Body Measurements"
+  },
+  "height": {
+   "label": "Height"
+  },
+  "fitness-calculators": {
+   "label": "Fitness & Nutrition"
+  }
+ }
+}

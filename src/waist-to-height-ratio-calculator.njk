@@ -484,22 +484,94 @@ root.addEventListener("keydown",function(e){
       "@type": "BreadcrumbList",
       "@id": "https://bodyshapecalculator.net/waist-to-height-ratio-calculator/#breadcrumb",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bodyshapecalculator.net/" },
-        { "@type": "ListItem", "position": 2, "name": "Waist-to-Height Ratio Calculator", "item": "https://bodyshapecalculator.net/waist-to-height-ratio-calculator/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bodyshapecalculator.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Body Calculators",
+          "item": "https://bodyshapecalculator.net/body-calculators/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Waist-to-Height Ratio Calculator",
+          "item": "https://bodyshapecalculator.net/waist-to-height-ratio-calculator/"
+        }
       ]
     },
     {
       "@type": "FAQPage",
       "@id": "https://bodyshapecalculator.net/waist-to-height-ratio-calculator/#faq",
       "mainEntity": [
-        { "@type": "Question", "name": "What is a healthy waist-to-height ratio?", "acceptedAnswer": { "@type": "Answer", "text": "Generally, a waist-to-height ratio under 0.50 means your waist measures less than half your height. Most public-health guidance built around WHtR centers on this benchmark." } },
-        { "@type": "Question", "name": "Does waist-to-height ratio apply to children?", "acceptedAnswer": { "@type": "Answer", "text": "The underlying idea can be used in children, but the flat 0.5 cutoff used for adults is generally not appropriate for growing children. Pediatric assessments typically use age- and sex-adjusted growth charts. This calculator is intended for adults." } },
-        { "@type": "Question", "name": "Is a WHtR under 0.5 always healthy?", "acceptedAnswer": { "@type": "Answer", "text": "A WHtR under 0.5 is a favorable signal on this specific measure, but it does not guarantee overall health. Diet, activity, sleep, stress, family history, and other health factors also affect health risk." } },
-        { "@type": "Question", "name": "Can WHtR replace BMI entirely?", "acceptedAnswer": { "@type": "Answer", "text": "No. BMI and waist-to-height ratio measure different aspects of body size and health risk. BMI provides an overall weight-to-height comparison, while WHtR focuses more specifically on central abdominal fat." } },
-        { "@type": "Question", "name": "How is WHtR different from measuring waist circumference alone?", "acceptedAnswer": { "@type": "Answer", "text": "Waist circumference alone does not account for height. Waist-to-height ratio divides waist circumference by height, helping account for differences in body size." } },
-        { "@type": "Question", "name": "What does a 0.39 waist-to-height ratio mean?", "acceptedAnswer": { "@type": "Answer", "text": "A WHtR of 0.39 is below the 0.40 line used in the chart on this page. This lower band is not a fat-related risk category; if the result is unexpected, it may be worth discussing with a healthcare professional." } },
-        { "@type": "Question", "name": "What waist-to-height ratio do I need for the Army or Air Force?", "acceptedAnswer": { "@type": "Answer", "text": "The reference information on this page uses under 0.55 for the Army and Navy. The Marine Corps reference is 0.52 or below, while the Air Force and Space Force use WHtR as a scored component with full points at 0.50 or below and zero points at 0.60 or above." } },
-        { "@type": "Question", "name": "Is there a different waist-to-height ratio chart for women?", "acceptedAnswer": { "@type": "Answer", "text": "The waist-to-height ratio calculation and commonly used 0.5 benchmark are generally the same for adult men and women. Individual interpretation can vary based on age, body composition, ethnicity, and other health factors." } }
+        {
+          "@type": "Question",
+          "name": "What is a healthy waist-to-height ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generally, a waist-to-height ratio under 0.50 means your waist measures less than half your height. Most public-health guidance built around WHtR centers on this benchmark."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does waist-to-height ratio apply to children?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The underlying idea can be used in children, but the flat 0.5 cutoff used for adults is generally not appropriate for growing children. Pediatric assessments typically use age- and sex-adjusted growth charts. This calculator is intended for adults."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a WHtR under 0.5 always healthy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A WHtR under 0.5 is a favorable signal on this specific measure, but it does not guarantee overall health. Diet, activity, sleep, stress, family history, and other health factors also affect health risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can WHtR replace BMI entirely?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. BMI and waist-to-height ratio measure different aspects of body size and health risk. BMI provides an overall weight-to-height comparison, while WHtR focuses more specifically on central abdominal fat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is WHtR different from just measuring waist circumference alone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Waist circumference alone does not account for height. Waist-to-height ratio divides waist circumference by height, helping account for differences in body size."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a 0.39 waist-to-height ratio mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A WHtR of 0.39 is below the 0.40 line used in the chart on this page. This lower band is not a fat-related risk category; if the result is unexpected, it may be worth discussing with a healthcare professional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What waist-to-height ratio do I need for the Army or Air Force?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The reference information on this page uses under 0.55 for the Army and Navy. The Marine Corps reference is 0.52 or below, while the Air Force and Space Force use WHtR as a scored component with full points at 0.50 or below and zero points at 0.60 or above."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a different waist-to-height ratio chart for women?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The waist-to-height ratio calculation and commonly used 0.5 benchmark are generally the same for adult men and women. Individual interpretation can vary based on age, body composition, ethnicity, and other health factors."
+          }
+        }
       ]
     }
   ]
