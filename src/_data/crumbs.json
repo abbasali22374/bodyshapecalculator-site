@@ -107,6 +107,10 @@
    "hub": "meas",
    "label": "Average Waist Size for Men"
   },
+  "average-waist-size-women": {
+   "hub": "meas",
+   "label": "Average Waist Size for Women"
+  },
   "average-bicep-size": {
    "hub": "meas",
    "label": "Average Bicep Size"
